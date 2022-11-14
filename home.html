@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    
-        <div class="first-header">
+         <div class="first-header">
             <div class="inner-header">
-                <a href="#"><img src="./images/user.svg" alt="User" srcset="" class="user-icon"></a>
-                <a href="#"><img src="./images/user.svg" alt="User" srcset="" class="user-icon"></a>
+                <a href="#about-sec"><img src="./images/user.svg" alt="User" srcset="" class="user-icon"></a>
+                <a href="#skills-sec"><img src="./images/skills.svg" alt="User" srcset="" class="user-icon"></a>
                 <h1 class="welcome-title">Welcome to my Portfolio</h1>
-                <a href="#"><img src="./images/user.svg" alt="User" srcset="" class="user-icon"></a>
-                <a href="#"><img src="./images/user.svg" alt="User" srcset="" class="user-icon"></a>
+                <a href="#expereince-sec"><img src="./images/project.svg" alt="User" srcset="" class="user-icon"></a>
+                <a href="#contact-sec"><img src="./images/contact.svg" alt="User" srcset="" class="user-icon"></a>
             </div>
         </div>
 
-            <div class="about-section">
+            <div class="about-section" id="about-sec">
                     <div class="text-part">
                          <h2 class="about-text">About me</h2>
                          <span></span>
@@ -28,24 +27,25 @@
                     </div>
                     <img src="./images/zm.png" alt="" class="zm-photo">
                     <div class="presention-part">
-                        <h1 class="start">HI THERE MY NAME IS</h1>
+                        <h1 class="start">HI THERE. MY NAME IS</h1>
                         <h2 class="name">Zahir Maliqi</h2>
                         <h3 class="profesion">FRONT END DEVELOPER</h3>
-                        <p class="introduction"> I'm a 23 year old Computer Engineering student. <br>I've completed all my exams, I only have to do a Bachelor thesis.</p>
-                        <button>Hire Me</button>                    
+                        <p class="introduction"> I'm a 23 year old Computer Engineering student. I've completed all <br>my exams, I only have to do a Bachelor thesis.</p>
+                        <a href="#hire-sec"><button class="hireme-bttn">Hire Me</button></a>                    
                     </div>
             </div>
 
         <!-- ================================================== -->
-        <div class="conteudo">
-            <img src="./images/ic-git.png"> 
-            <img src="./images/ic-git.png"> 
-            <img src="./images/ic-css.png">
-            <img src="./images/ic-git.png"> 
-            <img src="./images/ic-git.png"> 
+<div style="background-color: #a68989;">
+        <div class="conteudo" id="skills-sec">
+            <img src="./images/html.png"> 
+            <img src="./images/ic-css.png"> 
+            <img src="./images/ic-git.png">
+            <img src="./images/js.png"> 
+            <img src="./images/react.png"> 
         </div>
 
-        <div class="experiences-section">
+        <div class="experiences-section" id="expereince-sec">
 
            <div class="experiences">
             <h1 class="about-text">My Experiences</h1>  
@@ -57,30 +57,89 @@
             <div class="c1">
                 <img src="./images/seotactica-logo.png" alt="" srcset="">
                 <button onclick="showhideDetails()" id="experience-bttn">More</button>
-                <div id="show-details">
-                    <h1>Hello</h1>
-                    <p>Hello there </p>
+                <div id="show-details" style="display: none;">
+                    <h3>Web Development Intern ( Wordpress )</h3>
+                    <p>Dec, 2021 – March,2022</p>
+                    <p> Developed effective and responsive user interfaces</p>
                 </div>
             </div>
             <div class="c2">
                 <img src="./images/kostt-logo.png" alt="" srcset="">
                 <button onclick="showhideDetails1()" id="experience-bttn1">More</button>
-                <div id="show-details1">
-                    <h1>Hello</h1>
-                    <p>Hello there </p>
+                <div id="show-details1" style="display: none;">
+                    <h3>Professional practice - KOSTT</h3>
+                    <p>05 August, 2021 – 25 August,2021</p>
+                    <p> Kosst web modules and generate A SiteMap for Kosst webpage</p>
                 </div>
             </div>
            </div> 
         </div>
-
-        <div class="footer">
-            <div>Find me here</div>
-            <div>Hello</div>
-            <div class="text-wrap">
-                <div class="thank-text">Thanks For Taking your time</div>
+    </div>
+      <div class="cardpart">
+        <div class="container cardcontainer" id="hire-sec">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./images/doctor.png">
+                        <h3>Doctor Page</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Its a single doctor page application using HTML, CSS and React Js. 
+                            We have a navbar component, services component ( using grid for the layout ), articles 
+                            component and a footer at the bottom..</p>
+                            <a href="https://github.com/zahirmaliqi/Doctor-Consultation">Read More</a>
+                    </div>
+                </div>
             </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./images/covid.png">
+                        <h3>Covid Info</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>We have a login Form Animation, a slider where we work with arrows, a FAQ section and a 
+                            modal with news.</p>
+                            <a href="https://github.com/zahirmaliqi/covid-info">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./images/spaceApi.png">
+                        <h3>SpaceX Api</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Use SpaceX GraphQl api in React application.</p>
+                            <a href="https://github.com/zahirmaliqi/client">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         </div>
+
+        <div class="footer-basic" id="contact-sec">
+            <footer>
+                <div class="footer-txt">
+                <h3 class="welcome-title" >Thank you for your time</h3>
+               </div>
+                <div class="social">
+                    <a href="https://github.com/zahirmaliqi"><i class="icon ion-social-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zahir-maliqi-55563a207/"><i class="icon ion-social-linkedin"></i></a>
+                    <a href="#"><i class="icon ion-social-facebook"></i></a>
+               </div>
+            </footer>
+        </div>
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">      
     
   <script src="home.js"></script>
 </body>
